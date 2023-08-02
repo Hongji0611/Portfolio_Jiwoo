@@ -1,0 +1,44 @@
+// 문서의 최상위 요소. 변수 선언
+:root{
+    --mainEng-font: "Montserrat";
+    --mainKor-font: "nanumSquareNeo";
+    --mainNum-font: "gmarket";
+
+    --mainBg-color: #f3ede8;
+    --subBg100: #cdc0b1;
+    --subBg200: #afa395;
+    --subBg300: #81887c;
+    --subBg400: #afa7a2;
+    --subBg500: #a6afa2;
+  
+    --white: #fff;
+    --black: #000;
+    --black100: #2b2b2b;
+    --black200: #434343;
+    --black300: #686868;
+    --black400: #e0e0e0;
+
+    font-family: var(--mainEng-font), var(--mainKor-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    // 크롬, 사파리 텍스트 렌더링
+    -webkit-font-smoothing: antialiased;
+    // 파이어폭스 텍스트 렌더링
+    -moz-osx-font-smoothing: grayscale;
+    // 웹페이지 크기에 따른 텍스트 크기 자동 조정
+    -webkit-text-size-adjust: 100%;
+  
+    // 화면 크기가 800px 이하힐 때 텍스트 크기 조정
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+body {
+    background-color: var(--mainBg-color);
+}
